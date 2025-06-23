@@ -1,1 +1,66 @@
 # Tuyen_Quan.
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAEMIN EXPRESS</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="newspaper-layout">
+        <header class="header-baemin">
+            <h2>THÔNG BÁO TUYỂN ĐỘI VIÊN</h2>
+        </header>
+
+        <section class="date-section">
+            <div class="day-of-week">LIÊN HỆ</div>
+            <div class="phone-icon">📞 SĐT: 0931932114</div>
+            <div>Có thể đến trực tiếp vào tối thứ 7</div>
+            <div class="work-from-home">___Địa chỉ: Nhà văn hoá xã Phước Lộc___</div>
+        </section>
+
+        <article class="article top-left-article">
+            <h3>LỜI KÊU GỌI</h3>
+            <p>Với nhiệt huyết của tuổi trẻ và cống hiến cho xã hội khẳng định vị thế của thanh niên Phước Lộc đối với bạn bè trên mọi miền tổ quốc.</p>
+            <img src="img/Qc1.jpg" alt="tuyển quân">
+        </article>
+
+        <article class="article middle-left-article">
+            <img src="img/qc13.jpg" alt="">
+            <h3>TÌNH HÌNH ĐỊA PHƯƠNG & MỤC TIÊU ĐỘI</h3>
+            <p>- Phước Lộc có 3 tuyến quốc lộ trọng điểm đi qua do vậy tình hình Tai Nạn giao thông và ANTT khá phức tạp.</p>
+            <p>Đội TNXK - ANTT - PCCC & CNCH Phước Lộc kêu gọi Những Thanh Niên Trẻ sống trên địa bàn xã Phước Lộc và các xã lân cận gia nhập đội TNXK Phước Lộc để giúp mọi người về khuya, hỗ trợ tai nạn, ứng cứu người gặp khó khăn và đảm bảo công tác ANTT, giúp lưu thông khi có sự cố xảy ra.</p>
+        </article>
+
+        <article class="article main-feature-article">
+            <h2 class="main-title">ĐIỀU KIỆN<br>TUYỂN<br>QUÂN</h2>
+        
+            <div class="recruitment-info"> <p class="recruitment-description">Là người có Tâm, sống thật thà và có tính đoàn kết cao, không cần bằng cấp chỉ cần có TẤM LÒNG nhiệt huyết vì Xã Hội vì Cộng Đồng.</p>
+                <p class="recruitment-note-emphasis">+ Lưu ý: Đây là công tác tự nguyện được cấp lãnh đạo quan tâm, là mô hình được lan rộng khắp cả nước.</p>
+            </div>
+        
+            </article>
+
+        <article class="article bottom-middle-article">
+            <ul>
+                <li>Được trang bị nghiệp vụ sơ cứu thương, hỗ trợ người dân, kỹ năng phòng chống tội phạm, bảo vệ an ninh, điều phối giao thông.</li>
+                <li>Được cấp trang phục theo quy định, có chỗ ăn ngủ đầy đủ, và nhận được sự tin yêu của bà con.</li>
+            </ul>
+            <img src="img/qc10jpg.jpg" alt="">
+        </article>
+
+        <article class="article bottom-right-article">
+            <h3>QUYỀN LỢI ĐỘI VIÊN</h3>
+            <ul>
+                <li>Được trang bị nghiệp vụ sơ cứu thương, hỗ trợ người dân, kỹ năng phòng chống tội phạm, bảo vệ an ninh, điều phối giao thông.</li>
+                <li>Được cấp trang phục theo quy định, có chỗ ăn ngủ đầy đủ, và nhận được sự tin yêu của bà con.</li>
+            </ul>
+            <img src="img/Qc2.jpg" alt="">
+        </article>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,254 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.newspaper-layout {
+    width: 100%;
+    max-width: 1000px; /* Điều chỉnh chiều rộng tối đa của "tờ báo" */
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border: 1px solid #ddd;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* Chia thành 12 cột */
+    grid-gap: 20px;
+    position: relative;
+}
+
+/* Header Section */
+.header-baemin {
+    grid-column: 1 / span 8;
+    color: #29ABE2;
+    font-weight: bold;
+}
+.header-baemin h1 {
+    font-size: 3.5em;
+    margin: 0;
+    line-height: 1;
+}
+.header-baemin h2 {
+    font-size: 2.5em;
+    margin: 0;
+    line-height: 1;
+}
+
+.date-section {
+    grid-column: 9 / span 4;
+    text-align: right;
+    font-size: 0.9em;
+}
+.date-section .day-of-week {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #333;
+}
+.date-section .date {
+    color: #555;
+}
+.date-section .phone-icon {
+    display: inline-block;
+    background-color: #29ABE2;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+.date-section .work-from-home {
+    font-size: 0.8em;
+    color: #777;
+    margin-top: 5px;
+}
+
+/* Main Content Sections */
+.article {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.article img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.article h3 {
+    font-size: 1.1em;
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.article p {
+    margin-top: 0;
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+
+/* Specific Article Placements */
+.top-left-article {
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 1; /* Ngay dưới header */
+    background-color: #FFF8DC; /* Màu nền vàng nhạt */
+    align-self: start; /* THÊM DÒNG NÀY ĐỂ SỬA LỖI */
+    /* Các thuộc tính khác có thể có ở đây */
+}
+
+.middle-left-article {
+    grid-column: 1 / span 4;
+    grid-row: 3 / span 1;
+    background-color: #E0F7FA;
+}
+
+.bottom-left-tinvan {
+    grid-column: 1 / span 4;
+    grid-row: 4 / span 1;
+    background-color: #3A3A3A;
+    color: white;
+    padding: 15px;
+}
+
+.main-feature-article {
+    grid-column: 5 / span 8;
+    grid-row: 2 / span 1;
+    background-color: #FFEBCD;
+    text-align: center; /* Có thể không cần nếu display:flex và justify-content:center */
+    display: flex;
+    flex-direction: column; /* Quan trọng nếu nội dung bên trong xếp dọc */
+    justify-content: center;
+    align-items: center;
+    /* min-height: auto; */ /* Hoặc xóa hẳn dòng min-height */
+    align-self: start;
+    justify-self: start; /* Có thể không cần nếu bạn muốn nó chiếm hết chiều rộng của grid column */
+    padding: 20px 0; /* Thêm padding nếu muốn có khoảng trống trên dưới nội dung */
+}
+.main-feature-article .main-title {
+    font-size: 2.8em;
+    font-weight: bold;
+    color: #D9534F;
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+.main-feature-article .cat-image {
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.bottom-middle-article {
+    grid-column: 5 / span 4;
+    grid-row: 4 / span 0;
+}
+
+.bottom-right-article {
+    grid-column: 9 / span 4;
+    grid-row: 4 / span 0;
+}
+
+/* Icon overlay */
+.icon-overlay {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.icon-overlay img {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .newspaper-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .header-baemin, .date-section, .top-left-article, .middle-left-article, .bottom-left-tinvan,
+    .main-feature-article, .bottom-middle-article, .bottom-right-article {
+        grid-column: 1 / -1;
+    }
+
+    .date-section {
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .main-feature-article .main-title {
+        font-size: 2em;
+
+    }
+}
+/* --- CSS cho phần Điều kiện tuyển quân --- */
+
+/* Định dạng cho tiêu đề chính "ĐIỀU KIỆN TUYỂN QUÂN" */
+/* Giả sử bạn muốn nó giống phong cách ảnh mẫu (chữ to, màu cam, font Impact) */
+.main-feature-article .main-title {
+    font-family: 'Impact', Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Font chữ lớn, đặc trưng */
+    font-size: clamp(3em, 8vw, 5.5em); /* Kích thước chữ lớn, có thể điều chỉnh */
+    color: #ec3737d8; /* Màu đỏ cam nổi bật */
+    line-height: 1.0; /* Khoảng cách giữa các dòng chữ "ĐIỀU KIỆN", "TUYỂN", "QUÂN" */
+    text-transform: uppercase;
+    text-align: center; /* Căn giữa tiêu đề */
+    margin-bottom: 30px; /* Khoảng cách từ tiêu đề xuống phần mô tả */
+    /* Nếu bạn có CSS cho .main-feature-title-styled từ trước, bạn có thể dùng class đó thay cho .main-title ở HTML */
+}
+
+/* Định dạng cho khối chứa thông tin mô tả */
+.recruitment-info {
+    margin-top: 20px; /* Khoảng cách phía trên nếu cần, nhưng .main-title đã có margin-bottom */
+    padding: 0 15px;  /* Thêm chút padding hai bên cho dễ đọc */
+    text-align: left; /* Căn lề trái cho các đoạn văn bản mô tả */
+}
+
+/* Định dạng cho đoạn mô tả điều kiện */
+.recruitment-description {
+    font-size: 1.1em;  /* Kích thước chữ vừa phải, dễ đọc */
+    color: #000000;    /* Màu chữ đậm, dễ nhìn trên nền sáng */
+    line-height: 1.7;  /* Tăng chiều cao dòng để đoạn văn dễ đọc hơn */
+    margin-bottom: 15px; /* Khoảng cách với đoạn lưu ý bên dưới */
+    font-weight: normal; /* Bỏ bold mặc định từ style inline cũ, hoặc đặt là bold nếu muốn */
+}
+
+/* Bạn có thể thêm style cho chữ "TẤM LÒNG" nếu muốn nó nổi bật hơn */
+.recruitment-description strong { /* Ví dụ: nếu bạn bọc "TẤM LÒNG" trong thẻ <strong> */
+    font-weight: bold;
+    color: #222; /* Hoặc một màu khác */
+}
+
+/* Định dạng cho đoạn lưu ý */
+.recruitment-note-emphasis {
+    font-size: 1em;
+    color: #484848;    /* Màu chữ hơi nhạt hơn một chút so với mô tả */
+    font-style: italic;
+    line-height: 1.6;
+    padding: 10px; /* Thêm padding xung quanh */
+    border-left: 4px solid #e04521; /* Tạo một đường kẻ bên trái để nhấn mạnh, màu giống tiêu đề */
+    background-color: #f9f9f9; /* Thêm một màu nền nhẹ cho đoạn lưu ý */
+    margin-bottom: 0; /* Không cần margin dưới nếu đây là phần tử cuối */
+}
+
+/* Đảm bảo .main-feature-article có màu nền phù hợp */
+.main-feature-article {
+    /* Ví dụ: giả sử bạn đã có những style này từ trước */
+    background-color: #fff; /* Hoặc #f5f0e6 nếu bạn muốn màu kem */
+    padding-top: 20px;    /* Thêm padding cho toàn bộ article nếu cần */
+    padding-bottom: 20px;
+    /* Các style khác của bạn cho grid layout và responsive vẫn giữ nguyên */
+}

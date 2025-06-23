@@ -8,12 +8,10 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-
     <div class="newspaper-layout">
         <header class="header-baemin">
             <h2>THÔNG BÁO TUYỂN ĐỘI VIÊN</h2>
         </header>
-
         <section class="date-section">
             <div class="day-of-week">LIÊN HỆ</div>
             <div class="phone-icon">📞 SĐT: 0931932114</div>
